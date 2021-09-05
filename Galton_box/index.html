@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  <title>Galton box Animation</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script type="text/javascript" src="vendor/d3.v3.js"></script>
+  <script type="text/javascript" src="animint.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <!-- Selectize -->
+  <script type="text/javascript" src="vendor/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="vendor/selectize.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="vendor/selectize.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Galton Board<span class="logo_colour"> Animation</span></a></h1>
+          <h2>Using animint2 package</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <h2 style="margin-left:10%;margin-top:1%;color:white"> Author : Shubham Mittal </h2>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="content" style="width:100%">
+
+
+
+        <p>
+          The Galton board, also known as a quincunx or bean machine, is a device for statistical experiments named
+          after English scientist Sir Francis Galton. It consists of an upright board with evenly spaced nails (or pegs)
+          driven into its upper half, where the nails are arranged in staggered order, and a lower half divided into a
+          number of evenly-spaced rectangular slots. The front of the device is covered with a glass cover to allow
+          viewing of both nails and slots. In the middle of the upper edge, there is a funnel into which balls can be
+          poured, where the diameter of the balls must be much smaller than the distance between the nails. The funnel
+          is located precisely above the central nail of the second row so that each ball, if perfectly centered, would
+          fall vertically and directly onto the uppermost point of this nail's surface (Kozlov and Mitrofanova 2002).
+          The figure below shows a variant of the board in which only the nails that can potentially be hit by a ball
+          dropped from the funnel are included, leading to a triangular array instead of a rectangular one.
+        </p>
+        <p align="middle"><img width="181" height="217" src="GaltonBoard.gif" align="middle" alt="GaltonBoard" /></p>
+        <p>
+          Each time a ball hits one of the nails, it can bounce right (or left) with some probability p (and q=1-p). For
+          symmetrically placed nails, balls will bounce left or right with equal probability, so p=q=1/2. If the rows
+          are numbered from 0 to N-1, the path of each falling ball is a Bernoulli trial consisting of N steps.
+          Each ball crosses the bottom row hitting the nth peg from the left (where 0<=n<=N-1) iff it has taken exactly
+            n right turns, which occurs with probability \( P_p(n|N)={n \choose x}*p^nq^{N-n} \) <p>
+            This process therefore gives rise to a <a
+              href="https://en.wikipedia.org/wiki/Binomial_distribution">binomial
+              distribution</a> of in the heights of heaps of balls in the lower slots.
+        </p>
+        <p>
+          If the number of balls is sufficiently large and p=q=1/2, then according
+          to the <a href="https://en.wikipedia.org/wiki/Law_of_large_numbers">weak law of large numbers</a>, the
+          distribution
+          of the heights of the ball heaps will approximate a <a
+            href="https://en.wikipedia.org/wiki/Normal_distribution">normal
+            distribution</a>.
+        <p>The above was material taken from <a href="https://mathworld.wolfram.com/GaltonBoard.html"> Galton Board</a>
+        <p>
+        <p>
+          The following animination has been made with the <a href="https://github.com/tdhock/animint2"> animint2
+            package </a> of the R programming language.
+          The source code in R can be found <a
+            href="https://github.com/shubhammittal588/Animated_interactive_ggplots_GSoC_Tasks/blob/83f649913c4ed05062832f0cba2f8e30fd7c240f/galton_box_final.R">here</a>.
+        <p> We simulate the Galton Box experiment- at every stage a ball has 0.5 probablity to fall left or right. At
+          the end, we do get a normal-like distribution
+
+
+        <div id="plot">
+          <script>
+            var plot = new animint("#plot", "plot.json");
+          </script>
+        </div>
+          <!-- <button class="button">
+            Show download status table
+          </button>
+          <button class="button">
+            Show animation controls
+          </button>
+          <button class="button">
+            Show selection menus
+          </button>
+    --!>
+      </div>
+    </div>
+
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <div id="footer">
+      <h4 style="color:white;">Contact Me</h4>
+      <ul class="social-network social-circle">
+        <li><a href="https://www.linkedin.com/in/shubham-mittal-470ab0202/" class="icoLinkedin" title="Linkedin"><i
+              class="fa fa-linkedin"></i></a></li>
+      </ul>
+
+    </div>
+
+
+
+  </div>
+</body>
+
+</html>

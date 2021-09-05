@@ -1,0 +1,31 @@
+.button {
+    background-color: #22A7F0; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    height: 27px;
+    border-radius: 4px;
+    transition-duration: all 0.4s;
+    box-shadow: 0 5px #999;
+  }
+  
+  .button:hover {
+    background-color: #237caf; /* Green */
+    color: white;
+    box-shadow: 0 5px #999;
+  }
+  
+  .disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .button:active {
+    background-color: #237caf;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
