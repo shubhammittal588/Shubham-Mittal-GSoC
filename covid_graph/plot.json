@@ -1,0 +1,624 @@
+{
+ "geoms": {
+ "geom1_tallrect_scatter": {
+ "geom": "tallrect",
+"classed": "geom1_tallrect_scatter",
+"aes": {
+ "xmin": "month01.POSIXct",
+"xmax": "next01.POSIXct",
+"clickSelects": "month" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.1,
+"colour": "#BEBEBE",
+"clickSelects": "month" 
+},
+"types": {
+ "xmin": "numeric",
+"xmax": "numeric",
+"clickSelects": "factor",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom2_line_scatter": {
+ "geom": "line",
+"classed": "geom2_line_scatter",
+"aes": {
+ "x": "date.POSIXct",
+"y": "Confirmed",
+"group": "State",
+"colour": "State",
+"clickSelects": "State" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        4,
+"clickSelects": "State" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"group": "character",
+"clickSelects": "character",
+"PANEL": "integer" 
+},
+"chunk_order": [],
+"nest_order": [
+ "group" 
+],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom3_point_plot2": {
+ "geom": "point",
+"classed": "geom3_point_plot2",
+"aes": {
+ "x": "date.POSIXct",
+"y": "Confirmed",
+"tooltip": "paste(Date, \"Confirmed=\", Confirmed)",
+"showSelected1": "State",
+"showSelected2": "month" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#FF0000",
+"showSelected": [ "State", "month" ] 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"tooltip": "character",
+"showSelected1": "character",
+"showSelected2": "factor",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom4_point_plot2": {
+ "geom": "point",
+"classed": "geom4_point_plot2",
+"aes": {
+ "x": "date.POSIXct",
+"y": "Confirmed",
+"showSelected1": "State" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#FF0000",
+"alpha":      0.1,
+"size":      0.5,
+"showSelected": "State" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_point_plot2": {
+ "geom": "point",
+"classed": "geom5_point_plot2",
+"aes": {
+ "x": "date.POSIXct",
+"y": "Cured",
+"tooltip": "paste(Date, \"Cured=\", Cured)",
+"showSelected1": "State",
+"showSelected2": "month" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#00FF00",
+"showSelected": [ "State", "month" ] 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"tooltip": "character",
+"showSelected1": "character",
+"showSelected2": "factor",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom6_point_plot2": {
+ "geom": "point",
+"classed": "geom6_point_plot2",
+"aes": {
+ "x": "date.POSIXct",
+"y": "Cured",
+"showSelected1": "State" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#00FF00",
+"alpha":      0.1,
+"size":      0.5,
+"showSelected": "State" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom7_point_plot2": {
+ "geom": "point",
+"classed": "geom7_point_plot2",
+"aes": {
+ "x": "date.POSIXct",
+"y": "Deaths",
+"tooltip": "paste(Date, \"Deaths=\", Deaths)",
+"showSelected1": "State",
+"showSelected2": "month" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#000000",
+"showSelected": [ "State", "month" ] 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"tooltip": "character",
+"showSelected1": "character",
+"showSelected2": "factor",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom8_point_plot2": {
+ "geom": "point",
+"classed": "geom8_point_plot2",
+"aes": {
+ "x": "date.POSIXct",
+"y": "Deaths",
+"showSelected1": "State" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#000000",
+"alpha":      0.1,
+"size":      0.5,
+"showSelected": "State" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"duration": {
+ "month":     2000,
+"State":     2000 
+},
+"selectors": {
+ "month": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "September 2020",
+"levels": [ "January 2020", "February 2020", "March 2020", "April 2020", "May 2020", "June 2020", "July 2020", "August 2020", "September 2020", "October 2020", "November 2020", "December 2020" ],
+"update": [
+ "geom1_tallrect_scatter",
+"geom3_point_plot2",
+"geom5_point_plot2",
+"geom7_point_plot2" 
+],
+"duration":     2000 
+},
+"State": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "Maharashtra",
+"levels": [ "Andaman and Nicobar Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Cases being reassigned to states", "Chandigarh", "Chandigarh***", "Chhattisgarh", "Dadar Nagar Haveli", "Dadra and Nagar Haveli and Daman and Diu", "Daman & Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Ladakh", "Madhya Pradesh", "Maharashtra", "Maharashtra***", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Puducherry", "Punjab", "Punjab***", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Telangana***", "Telengana", "Telengana***", "Tripura", "Unassigned", "Uttar Pradesh", "Uttarakhand", "West Bengal" ],
+"update": [
+ "geom2_line_scatter",
+"geom3_point_plot2",
+"geom4_point_plot2",
+"geom5_point_plot2",
+"geom6_point_plot2",
+"geom7_point_plot2",
+"geom8_point_plot2" 
+],
+"duration":     2000 
+} 
+},
+"plots": {
+ "scatter": {
+ "panel_margin_lines":     0.27,
+"legend": {},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ {
+ "Jan 2020": 1.577817e+09,
+"Apr 2020": 1.585679e+09,
+"Jul 2020": 1.593542e+09,
+"Oct 2020": 1.601491e+09,
+"Jan 2021": 1.609439e+09 
+} 
+],
+"y": [
+ [
+        0,
+  500000,
+ 1000000,
+ 1500000 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+ 1.577817e+09,
+1.581748e+09,
+1.585679e+09,
+1.589611e+09,
+1.593542e+09,
+1.597516e+09,
+1.601491e+09,
+1.605465e+09,
+1.609439e+09 
+] 
+],
+"y": [
+ [
+        0,
+  250000,
+  500000,
+  750000,
+ 1000000,
+ 1250000,
+ 1500000,
+ 1750000 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": {
+ "Jan 2020": 1.577817e+09,
+"Apr 2020": 1.585679e+09,
+"Jul 2020": 1.593542e+09,
+"Oct 2020": 1.601491e+09,
+"Jan 2021": 1.609439e+09 
+},
+"xlab": [
+ "Jan 2020",
+"Apr 2020",
+"Jul 2020",
+"Oct 2020",
+"Jan 2021" 
+],
+"xrange": [ 1.576236e+09, 1.611021e+09 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+  500000,
+ 1000000,
+ 1500000 
+],
+"ylab": [
+ "0",
+"500000",
+"1000000",
+"1500000" 
+],
+"yrange": [ -92968.35,  1952335 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Time ->",
+"xanchor": "middle",
+"xangle":        0,
+"ytitle": "Confirmed cases state-wise",
+"yanchor": "end",
+"yangle":        0,
+"xlabs": [
+ "Jan 2020",
+"Apr 2020",
+"Jul 2020",
+"Oct 2020",
+"Jan 2021" 
+],
+"ylabs": [
+ "0",
+"500000",
+"1000000",
+"1500000" 
+],
+"title": "Confirmed cases for India statewise",
+"options": {
+ "width":      600,
+"height":      500 
+},
+"geoms": [
+ "geom1_tallrect_scatter",
+"geom2_line_scatter" 
+] 
+},
+"plot2": {
+ "panel_margin_lines":     0.25,
+"legend": {},
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#EBEBEB",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": [],
+"grid_major": {
+ "colour": "#FFFFFF",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ {
+ "Apr": 1.585679e+09,
+"Jul": 1.593542e+09,
+"Oct": 1.601491e+09 
+} 
+],
+"y": [
+ [
+        0,
+  500000,
+ 1000000,
+ 1500000 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FFFFFF",
+"size":     0.25,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+ 1.581748e+09,
+1.585679e+09,
+1.589611e+09,
+1.593542e+09,
+1.597516e+09,
+1.601491e+09,
+1.605422e+09 
+] 
+],
+"y": [
+ [
+        0,
+  250000,
+  500000,
+  750000,
+ 1000000,
+ 1250000,
+ 1500000,
+ 1750000 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": {
+ "Apr": 1.585679e+09,
+"Jul": 1.593542e+09,
+"Oct": 1.601491e+09 
+},
+"xlab": [
+ "Apr",
+"Jul",
+"Oct" 
+],
+"xrange": [ 1.578966e+09, 1.608809e+09 ],
+"xline": true,
+"xticks": true,
+"y": [
+        0,
+  500000,
+ 1000000,
+ 1500000 
+],
+"ylab": [
+ "0",
+"500000",
+"1000000",
+"1500000" 
+],
+"yrange": [ -92968.35,  1952335 ],
+"yline": true,
+"yticks": true 
+},
+"xtitle": "Time ->",
+"xanchor": "middle",
+"xangle":        0,
+"ytitle": "Cases",
+"yanchor": "end",
+"yangle":        0,
+"xlabs": [
+ "Apr",
+"Jul",
+"Oct" 
+],
+"ylabs": [
+ "0",
+"500000",
+"1000000",
+"1500000" 
+],
+"title": "Confirmed, Cured and Deaths due to Covid-19 for selected State",
+"options": {
+ "width":      600,
+"height":      500 
+},
+"geoms": [
+ "geom3_point_plot2",
+"geom4_point_plot2",
+"geom5_point_plot2",
+"geom6_point_plot2",
+"geom7_point_plot2",
+"geom8_point_plot2" 
+] 
+} 
+} 
+}
